@@ -16,6 +16,7 @@ It returns "access_token" for validation of subsequent requests.
 
 **GET**
 >> localhost:8000/api/groups
+
 It returns JSON response
 {
     "status": "success",
@@ -60,5 +61,6 @@ Validate the group name and update the details
 >> localhost:8000/api/groups/create?name=Heart&parent_name=Cardiology
 
 Returns 201, if parent_name is null set it as main group (Hospital) otherwise added the clinician group under the main group
+
 
 
