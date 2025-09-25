@@ -11,6 +11,7 @@ To create the tables "users" and "groups", run the artisan command
 **php artisan migrate**
 
 To dump sample records into the database as a start, run the seeder commands
+
 **php artisan make:seeder GroupsSeeder**
 
 **php artisan make:seeder UsersTableSeeder**
@@ -72,6 +73,7 @@ Validate the group name and update the details
 >> localhost:8000/api/groups/create?name=Heart&parent_name=Cardiology
 
 Returns 201, if parent_name is null set it as main group (Hospital) otherwise added the clinician group under the main group
+
 
 
 
